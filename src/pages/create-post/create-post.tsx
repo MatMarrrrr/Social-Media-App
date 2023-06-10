@@ -1,4 +1,3 @@
-import React from "react";
 import CreateForm from "./create-form";
 import "../../style/CreatePost.css";
 

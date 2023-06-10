@@ -1,4 +1,3 @@
-import React from "react";
 import "../style/Login.css";
 import { auth, provider } from "../config/firebase";
 import { signInWithPopup } from "firebase/auth";
@@ -18,7 +17,9 @@ function Login() {
 
   return (
     <div className="Login">
-      <button className="signInButton" onClick={signInWithGoogle}>Sign In With Google</button>
+      <button className="signInButton" onClick={signInWithGoogle}>
+        Sign In With Google
+      </button>
     </div>
   );
 }
