@@ -5,6 +5,7 @@ import Main from "./pages/main/main";
 import Login from "./pages/login";
 import CreatePost from "./pages/create-post/create-post";
 import Navbar from "./components/navbar";
+import { auth } from "./config/firebase";
 
 function App() {
   return (

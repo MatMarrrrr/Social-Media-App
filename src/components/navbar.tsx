@@ -33,7 +33,9 @@ function Navbar() {
             {user?.photoURL && (
               <img src={user.photoURL} width="40px" height="40px" />
             )}
-            <button onClick={signUserOut}>Log Out</button>
+            <button className="logOutButton" onClick={signUserOut}>
+              Log Out
+            </button>
           </>
         )}
       </div>

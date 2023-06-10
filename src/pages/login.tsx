@@ -18,8 +18,7 @@ function Login() {
 
   return (
     <div className="Login">
-      <p>Sign In With Google To Continue</p>
-      <button onClick={signInWithGoogle}>Sign In With Google</button>
+      <button className="signInButton" onClick={signInWithGoogle}>Sign In With Google</button>
     </div>
   );
 }

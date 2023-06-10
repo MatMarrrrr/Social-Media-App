@@ -84,7 +84,7 @@ function Post(props: Props) {
   }, []);
 
   return (
-    <div>
+    <div className="post">
       <div className="title">
         <h1>{post.title}</h1>
       </div>
@@ -92,11 +92,18 @@ function Post(props: Props) {
         <p>{post.description}</p>
       </div>
       <div className="postFooter">
-        <p>@{post.username}</p>
-        <button onClick={!hasUserLiked ? addLike : removeLike}>
-          {hasUserLiked ? <>&#128078;</> : <>&#128077;</>}
-        </button>
-        {likes && <p>Likes: {likes?.length}</p>}
+        <p>Added by @{post.username}</p>
+        {user && (
+          <>
+            {likes && <p>Likes: <span className="likesQuantity">{likes?.length}</span></p>}
+            <button
+              className="likeButton"
+              onClick={!hasUserLiked ? addLike : removeLike}
+            >
+              {hasUserLiked ? <>&#128078;</> : <>&#128077;</>}
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
