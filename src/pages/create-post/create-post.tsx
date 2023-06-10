@@ -3,7 +3,7 @@ import "../../style/CreatePost.css";
 
 function CreatePost() {
   return (
-    <div>
+    <div className="createPost">
       <CreateForm/>
     </div>
   );

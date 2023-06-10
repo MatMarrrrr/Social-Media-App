@@ -43,12 +43,12 @@ function CreateForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onCreatePost)}>
+    <form className="createPostForm" onSubmit={handleSubmit(onCreatePost)}>
       <input placeholder="Title..." {...register("title")} />
       <p>{errors.title?.message}</p>
-      <input placeholder="Description..." {...register("description")} />
+      <textarea placeholder="Description..." {...register("description")} />
       <p>{errors.description?.message}</p>
-      <input type="submit" />
+      <input type="submit" value="Add post" />
     </form>
   );
 }
