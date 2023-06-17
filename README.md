@@ -1,5 +1,5 @@
 # Social Media App
-## Live version: https://social-media-app-matmar.netlify.app/
+## Live version: https://social-media-app-matmar.netlify.app/ 
 ## Used technologies
 [<img align="left" alt="React" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;"/>][react.js]
 [<img align="left" alt="TypeScript" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" style="padding-right:10px;"/>][typescript]
