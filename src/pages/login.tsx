@@ -22,7 +22,7 @@ function Login() {
     if (user) {
       navigate("/");
     }
-  }, [user]);
+  }, [user, navigate]);
 
   return (
     <div className="Login">

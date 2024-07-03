@@ -30,7 +30,12 @@ function Navbar() {
           <>
             <p>{user?.displayName}</p>
             {user?.photoURL && (
-              <img src={user.photoURL} width="40px" height="40px" />
+              <img
+                src={user.photoURL}
+                alt={`${user.displayName}'s profile`}
+                width="40px"
+                height="40px"
+              />
             )}
             <button className="logOutButton" onClick={signUserOut}>
               Log Out
